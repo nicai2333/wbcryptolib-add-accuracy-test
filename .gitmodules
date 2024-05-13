@@ -1,0 +1,9 @@
+[submodule "lib/mbedtls"]
+	path = lib/mbedtls
+	url = https://github.com/ARMmbed/mbedtls.git
+[submodule "jni/lib/jnihpp/repository"]
+	path = jni/lib/jnihpp/repository
+	url = https://github.com/mapbox/jni.hpp.git
+[submodule "jni/lib/spdlog"]
+	path = jni/lib/spdlog
+	url = https://github.com/gabime/spdlog.git

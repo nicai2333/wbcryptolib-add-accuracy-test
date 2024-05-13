@@ -1,0 +1,31 @@
+#VS Files
+.vs
+out
+*.dll
+*.so
+
+#CMake generic
+.vscode
+build
+cmake-build-debug
+#gradle
+# Ignore binary files
+bin
+out
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+#IDEA
+.idea
+
+#MacOS
+.DS_store
+
+#doxygen
+apidoc
+
+
+cmake-build-debug-wsl

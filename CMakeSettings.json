@@ -1,0 +1,100 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "ENABLE_SM2",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_SM3",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_JNI",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_RSACOOP",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_WBSM2",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_SM2COOP",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_KEYBOX",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_SM4",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_SAMPLE",
+          "value": "True",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "variables": [
+        {
+          "name": "ENABLE_SM2",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_SM2COOP",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_SM3",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_JNI",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "ENABLE_PROGRAMS",
+          "value": "False",
+          "type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

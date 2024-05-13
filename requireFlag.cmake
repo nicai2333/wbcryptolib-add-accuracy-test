@@ -1,0 +1,5 @@
+function(require_flag flag message)
+	if(NOT ${${flag}})
+		message(FATAL_ERROR ${message})
+	endif()
+endfunction(require_flag)

@@ -1,0 +1,26 @@
+/**
+ * \file config.h
+ *
+ * \brief All configurations for wbcrypto
+ */
+
+#define WBCRYPTO_VERSION "V0.0.1"
+
+#define WBCRYPTO_CIPHER_MODE_WITH_PADDING
+
+#define WBCRYPTO_SM4_NUM_ROUNDS 32
+#define DUMMY_ROUND_ENABLE 1
+#define SM4_WHITEBOX_ROUND_MAX  WBCRYPTO_SM4_NUM_ROUNDS
+
+#if DUMMY_ROUND_ENABLE
+#define SM4_WHITEBOX_DUMMYROUND_F 1
+        #define SM4_WHITEBOX_DUMMY_ROUND 4        //max dummy round
+        #define SM4_WHITEBOX_ROUND (WBCRYPTO_SM4_NUM_ROUNDS + 4* SM4_WHITEBOX_DUMMY_ROUND)  //max round number
+#else
+#define SM4_WHITEBOX_DUMMYROUND_F 0
+#define SM4_WHITEBOX_DUMMY_ROUND_MAX 0
+
+#endif //DUMMY_ROUND_ENABLE
+
+#define SM4_WHITEBOX_NUM_STATES (SM4_WHITEBOX_ROUND+4)
+//TODO
